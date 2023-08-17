@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url(wec.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Tilt Prism', cursive;
+}
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: center;
+    align-items: center; */
+    font-size: 30px;
+    text-shadow: white 50px 50px 50px;
+    margin-top: 50px;
+}
+a{
+    margin-left: 100px;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 150px;
+}
+h4{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
