@@ -5,9 +5,6 @@
     padding: 0;
 }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: black;
     color: white;
     font-family: 'Inconsolata', monospace;
@@ -15,13 +12,15 @@ body{
     font-family: 'Raleway', sans-serif;
     font-family: 'Source Code Pro', monospace;
     font-family: 'Tilt Prism', cursive;
-    /* font-family: 'Inconsolata', monospace;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Source Code Pro', monospace;
-    font-family: 'Tilt Prism', cursive; */
 }
+
 header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url(wec.jpeg);
+    box-shadow: inset 0px -26px 40px 35px rgba(0,0,0,1);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -29,18 +28,28 @@ header{
     /* filter: blur(4px); */
     /* opacity: 0.7; */
 }
+
 nav{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    gap: 7rem;
     font-size: 30px;
     text-shadow: white 50px 50px 50px;
     margin-top: 50px;
 }
-a{
-    margin-left: 100px;
+
+nav a{
+    text-decoration: none;
+    color: white;
 }
+
+.info, .info1{
+    text-align: center;
+   
+}
+
 h1{
     font-size: 60px;
     text-align: center;
@@ -49,49 +58,132 @@ h1{
     font-family: 'Raleway', sans-serif;
     font-family: 'Source Code Pro', monospace;
     font-family: 'Tilt Prism', cursive;
-}
-.button-h1{
     margin-top: 150px;
 }
-h4{
-    font-size: 20px;
-    text-align: center;
+
+.info h1{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0;
+    border-radius: 30px;
+    padding: 12px;
 }
-.button-h4{
+    
+h4{
+    font-size: 30px;
+    text-align: center;
     margin-top: 30px;
 }
-button{
+.info h4{
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     border: 0;
     border-radius: 30px;
-    /* display: flex; */
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
-    display: block;
-    margin: auto;
-    padding: 10px;
 }
 
-.button-p{
-    font-size: 20px;
-    text-align: center;
-    height: 90px;
+.info1 p{
+    font-size: 25px;
     width: 500px;
+    text-align: center;
+    margin-bottom: 70px;
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 0;
+    border-radius: 30px;
 }
-.button-svg{
+.info svg{
     margin-top: 150px;
     margin-bottom: 150px;
     background: none;
-
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 0;
+    border-radius: 30px;
 }
-.button-h2{
-    font-size: 15px;
+.info1 h2{
+    font-size: 3rem;
     margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 0;
+    border-radius: 30px;
 }
 .play{
-    border: 3px solid white;
+    border: 2px solid white;
     border-radius: 30px;
+}
+
+.formula{
+    margin-top: 100px;
+}
+
+.formula h1{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.div-formula{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 25px;
+}
+
+.div-formula a{
+    text-decoration: none;
+    color: white;
+}
+
+.massa .giovinazzi .lawson{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+}
+/* 
+.massa img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+h5{
+    margin-top: -70px;
+    padding-left: 10px;
+    width: 350px;
+    /* background-color: black;
+    border: 0;
+    border-radius: 30px; */
+    
+}
+
+/* h5:hover{
+    border: 2px solid;
+    border-color: white;
+    background-color: black;
+} */
+
+.more a{
+    text-decoration: none;
+}
+
+.more p{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(83, 127, 231);
+    border: 3px solid;
+    border-color: rgb(83, 127, 231);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.more p:hover{
+    background-color: rgba(233, 248, 249, 0.8);
+    border-color:rgb(233, 248, 249);
+    color: black;
 }
