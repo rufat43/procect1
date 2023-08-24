@@ -114,6 +114,11 @@ h4{
 }
 
 .formula{
+    background-image: url(f1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    box-shadow: inset 0px 0px 49px 40px rgba(0,0,0,1);
     margin-top: 100px;
 }
 
@@ -149,41 +154,165 @@ h4{
     height: 100%;
 } */
 
+/* .lawson img{
+    z-index: -1;
+} */
+
 h5{
+    text-align: start;
     margin-top: -70px;
     padding-left: 10px;
     width: 350px;
-    /* background-color: black;
-    border: 0;
-    border-radius: 30px; */
-    
 }
 
-/* h5:hover{
-    border: 2px solid;
-    border-color: white;
-    background-color: black;
-} */
+.formula-lenta{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    margin-top: 50px;
+    margin-left: 10px;
+    padding: 5px;
+    margin-bottom: 100px;
+}
+
+.formula-lenta a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    width: 800px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.formula-lenta a:nth-child(odd){
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.formula-lenta a:nth-child(even){
+    border: 2px solid black;
+    background-color: rgba(202, 198, 198, 0.9);
+}
+
+.formula-lenta p{
+    text-align: center;
+}
+
+.div-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
 
 .more a{
     text-decoration: none;
+    color: white;
 }
 
-.more p{
+.more{
     margin-top: 50px;
     margin-bottom: 30px;
     font-size: 20px;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(83, 127, 231);
+    background-color: black;
     border: 3px solid;
-    border-color: rgb(83, 127, 231);
+    border-color: rgb(255, 255, 255);
     border-radius: 15px;
-    padding: 5px;
+    padding: 10px;
 }
 
-.more p:hover{
+button:hover{
     background-color: rgba(233, 248, 249, 0.8);
     border-color:rgb(233, 248, 249);
+}
+
+.more a:hover{
     color: black;
+}
+
+/* end formula 1 */
+
+.wec{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(wec1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    box-shadow: inset 0px 0px 49px 40px rgba(0,0,0,1);
+}
+
+.wec-header{
+    margin-bottom: 30px;
+    margin-top: -30px;
+}
+
+.wec-header h1{
+    font-size: 40px;
+}
+
+.wec-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    box-shadow: 0px 0px 11px 9px rgba(0,0,0,1);
+}
+
+.wec-button{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.nascar{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(nascar.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    box-shadow: inset 0px 0px 49px 40px rgba(0,0,0,1);
+}
+
+.nascar-header{
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.nascar-header h1{
+    font-size: 40px;
+}
+
+.nascar-win{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.nascar-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+    gap: 1rem;
+}
+
+.nascar-info a{
+    text-decoration: none;
+    color: white;
 }
