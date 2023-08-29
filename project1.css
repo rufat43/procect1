@@ -24,12 +24,15 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    /* background: linear-gradient(3px); */
-    /* filter: blur(4px); */
-    /* opacity: 0.7; */
 }
 
 nav{
+    position: fixed;
+    top: 0;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: black;
+    padding: 18px 18px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -37,7 +40,8 @@ nav{
     gap: 7rem;
     font-size: 30px;
     text-shadow: white 50px 50px 50px;
-    margin-top: 50px;
+    margin-top: 5px;
+    z-index: 1;
 }
 
 nav a{
@@ -108,9 +112,19 @@ h4{
     border: 0;
     border-radius: 30px;
 }
+
+.info .bx{
+    display: flex;
+    font-size: 2rem;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+}
+
 .play{
     border: 2px solid white;
     border-radius: 30px;
+    z-index: -1;
 }
 
 .formula{
@@ -125,6 +139,7 @@ h4{
 .formula h1{
     font-size: 40px;
     padding-bottom: 30px;
+    padding: 80px;
 }
 
 .div-formula{
@@ -142,21 +157,7 @@ h4{
 .massa .giovinazzi .lawson{
     display: flex;
     flex-direction: column;
-    /* position: relative; */
 }
-/* 
-.massa img::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
-
-/* .lawson img{
-    z-index: -1;
-} */
 
 h5{
     text-align: start;
@@ -168,7 +169,8 @@ h5{
 .formula-lenta{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: start ;
     text-align: start;
     margin-top: 50px;
     margin-left: 10px;
@@ -186,12 +188,14 @@ h5{
 }
 
 .formula-lenta a:nth-child(odd){
-    border: 2px solid black;
+    border: 0px solid black;
+    border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
 .formula-lenta a:nth-child(even){
-    border: 2px solid black;
+    border: 0px solid black;
+    border-radius: 5px;
     background-color: rgba(202, 198, 198, 0.9);
 }
 
@@ -205,6 +209,42 @@ h5{
     align-items: center;
     margin-top: 50px;
     margin-bottom: 100px;
+}
+
+.dr{
+    position: relative;
+    display: inline-block;
+}
+
+.content-dr{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.content-dr a{
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dr:hover .content-dr{
+    display: block;
+}
+
+.dr button{
+    color: black;
+    font-size: 30px;
+    border: 0px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    /* margin-left: 200px; */
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .more a{
@@ -270,6 +310,12 @@ button:hover{
     font-size: 25px;
 }
 
+.card img{
+    width: 400px;
+    height: 300px; 
+    border-radius: 10px;
+}
+
 .wec-button{
     margin-top: 50px;
     margin-bottom: 100px;
@@ -301,6 +347,7 @@ button:hover{
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    gap: 1rem;
 }
 
 .nascar-info{
@@ -308,10 +355,25 @@ button:hover{
     align-items: center;
     flex-direction: column;
     text-align: start;
-    gap: 1rem;
+}
+
+.nascar-info img{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.nascar-info button{
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: white;
+    background-color: black;
+    padding: 5px;
+    margin: 5px;
 }
 
 .nascar-info a{
     text-decoration: none;
     color: white;
+    font-size: 20px;
 }
